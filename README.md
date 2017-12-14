@@ -6,11 +6,11 @@ Run and follow instructions
 
 	macos.sh
 
-# Install on Debian or derivates
+# Install on Ubuntu or derivates
 
 Run and follow instructions
 
-	debian.sh
+	ubuntu.sh
 
 # Terminal themes
 

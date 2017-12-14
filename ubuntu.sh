@@ -2,7 +2,7 @@
 
 # Install essential tools
 sudo apt update 
-sudo apt -y install git curl wget build-essential python python-pip python3 zsh
+sudo apt -y install git curl wget build-essential python3 python3-pip zsh
 
 pip3 install thefuck
 
@@ -38,4 +38,5 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 
 # Copy .zshrc
+echo "Alias and oh my zsh config folder need to be fixed"
 cp .zshrc ~/.zshrc

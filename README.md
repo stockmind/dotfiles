@@ -21,7 +21,7 @@ Run and follow instructions
 
 	ubuntu.sh
 
-# Vim configuration
+# Vim configuration
 
 - Open vim and type ":PluginInstall" to install all the required plugins
 

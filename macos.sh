@@ -13,7 +13,7 @@ brew tap caskroom/cask
 brew cask install $(< brewcaskfile)
 
 # Download scotch-box-pro vagrant file
-git clone https://github.com/scotch-io/scotch-box-pro.git
+git clone https://github.com/scotch-io/scotch-box-pro.git ~/scotch-box-pro
 
 # Install nerd fonts
 git clone https://github.com/ryanoasis/nerd-fonts.git

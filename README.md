@@ -1,5 +1,7 @@
 # dotfiles
 
+![Screenshot from macOS](https://github.com/stockmind/dotfiles/raw/master/screenshot.png)
+
 # Install on macOS
 
 Run and follow instructions

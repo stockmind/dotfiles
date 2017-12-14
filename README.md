@@ -21,6 +21,10 @@ Run and follow instructions
 
 	ubuntu.sh
 
+# Vim configuration
+
+- Open vim and type ":PluginInstall" to install all the required plugins
+
 # Terminal themes
 
 Tomorrow Night theme for iTerm2 and Terminal

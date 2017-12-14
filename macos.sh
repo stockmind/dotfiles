@@ -32,3 +32,10 @@ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/theme
 
 # Copy .zshrc
 cp .zshrc ~/.zshrc
+
+# Install Vundle for Vim plugin management
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+# Copy .vimrc
+cp .vimrc ~/.vimrc
+

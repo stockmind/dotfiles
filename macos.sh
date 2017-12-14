@@ -20,7 +20,7 @@ git clone https://github.com/ryanoasis/nerd-fonts.git
 cd nerd-fonts
 ./install.sh Hack
 cd ..
-rm -dfr nerd-fonts
+rm -dfr nerd-fonts/
 
 # Install oh-my-zsh
 echo "##### TYPE 'exit' IN ZSH SHELL TO CONTINUE INSTALL ######"

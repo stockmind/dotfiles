@@ -2,7 +2,7 @@
 
 # Install essential tools
 sudo apt update 
-sudo apt -y install git curl wget build-essential python python3
+sudo apt -y install git curl wget build-essential python python3 zsh
 
 # Install multimedia tools/plugin and utilities
 sudo apt -y install va-driver-all libva1 gstreamer1.0-libav gstreamer1.0-vaapi

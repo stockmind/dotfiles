@@ -27,6 +27,7 @@ cd ..
 rm -dr nerd-fonts
 
 # Install oh-my-zsh
+chsh -s $(which zsh)
 echo "##### TYPE 'exit' IN ZSH SHELL TO CONTINUE INSTALL ######"
 read -p "Press any key..."
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"

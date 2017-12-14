@@ -26,7 +26,7 @@ git clone https://github.com/ryanoasis/nerd-fonts.git
 cd nerd-fonts
 ./install.sh Hack
 cd ..
-rm -dr nerd-fonts
+rm -drf nerd-fonts/
 
 # Install oh-my-zsh
 chsh -s $(which zsh)

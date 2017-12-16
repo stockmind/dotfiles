@@ -26,7 +26,7 @@ git clone https://github.com/ryanoasis/nerd-fonts.git
 cd nerd-fonts
 ./install.sh Hack
 cd ..
-rm -dr nerd-fonts
+rm -drf nerd-fonts/
 
 # Install oh-my-zsh
 chsh -s $(which zsh)
@@ -40,3 +40,9 @@ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/theme
 # Copy .zshrc
 echo "Alias and oh my zsh config folder need to be fixed"
 cp .zshrc ~/.zshrc
+
+# Install Vundle for Vim plugin management
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+# Copy .vimrc
+cp .vimrc ~/.vimrc

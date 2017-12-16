@@ -69,6 +69,7 @@ plugins=(
   emoji
   emoji-clock
   thefuck
+  bgnotify
 )
 
 source $ZSH/oh-my-zsh.sh

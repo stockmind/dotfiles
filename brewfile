@@ -4,6 +4,7 @@ ffmpeg
 git
 imagemagick
 python3
+pip
 rsync
 terminal-notifier
 tree

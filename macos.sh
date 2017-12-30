@@ -12,6 +12,9 @@ brew install $(< brewfile)
 brew tap caskroom/cask
 brew cask install $(< brewcaskfile)
 
+# Complete install of python3 for pip
+brew postinstall python3
+
 # Download scotch-box-pro vagrant file
 git clone https://github.com/scotch-io/scotch-box-pro.git ~/scotch-box-pro
 

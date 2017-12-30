@@ -39,3 +39,6 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 # Copy .vimrc
 cp .vimrc ~/.vimrc
 
+# Uncomment to install OneDrive client from AppStore
+#mas install 823766827
+

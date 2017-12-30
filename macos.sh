@@ -16,7 +16,10 @@ brew cask install $(< brewcaskfile)
 brew postinstall python3
 
 # Download scotch-box-pro vagrant file
-git clone https://github.com/scotch-io/scotch-box-pro.git ~/scotch-box-pro
+git clone https://github.com/stockmind/scotch-box-pro ~/scotch-box-pro
+
+# Install fsnotify plugin for vagrant 
+vagrant plugin install vagrant-fsnotify
 
 # Install nerd fonts
 git clone https://github.com/ryanoasis/nerd-fonts.git

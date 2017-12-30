@@ -101,6 +101,7 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 #
 # Example aliases
 alias subl="open -a /Applications/Sublime\ Text.app"
+alias chrometest="open -a Google\ Chrome --args --disable-web-security --user-data-dir"
 alias zshconfig="subl ~/.zshrc"
 alias ohmyzsh="subl ~/.oh-my-zsh"
 

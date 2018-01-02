@@ -46,3 +46,5 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # Copy .vimrc
 cp .vimrc ~/.vimrc
+
+echo "REMEMBER TO FIX PATH IN .zshrc"

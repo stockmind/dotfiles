@@ -100,7 +100,7 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias ls="ls -a"
+alias lss="ls -a"
 alias ll="ls -la"
 alias subl="open -a /Applications/Sublime\ Text.app"
 alias chrometest="open -a Google\ Chrome --args --disable-web-security --user-data-dir"

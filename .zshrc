@@ -106,5 +106,6 @@ alias subl="open -a /Applications/Sublime\ Text.app"
 alias chrometest="open -a Google\ Chrome --args --disable-web-security --user-data-dir"
 alias zshconfig="subl ~/.zshrc"
 alias ohmyzsh="subl ~/.oh-my-zsh"
+alias afk='/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/Resources/CGSession -suspend'
 
 export TERM="xterm-256color"

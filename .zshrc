@@ -68,7 +68,6 @@ plugins=(
   osx
   emoji
   emoji-clock
-  thefuck
   bgnotify
 )
 

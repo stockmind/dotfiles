@@ -22,11 +22,8 @@ git clone https://github.com/stockmind/scotch-box-pro ~/scotch-box-pro
 vagrant plugin install vagrant-fsnotify
 
 # Install nerd fonts
-git clone https://github.com/ryanoasis/nerd-fonts.git
-cd nerd-fonts
-./install.sh Hack
-cd ..
-rm -dfr nerd-fonts/
+brew tap caskroom/fonts
+brew cask install font-hack-nerd-font
 
 # Install oh-my-zsh
 echo "##### TYPE 'exit' IN ZSH SHELL TO CONTINUE INSTALL ######"

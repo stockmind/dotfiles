@@ -8,9 +8,16 @@ xcode-select --install
 
 # Install brew packages
 brew update
-brew install $(< brewfile)
+while IFS='' read -r line || [[ -n "$line" ]]; do
+    echo "Install: $line"
+    brew install $line
+done < brewfile
+
 brew tap caskroom/cask
-brew cask install $(< brewcaskfile)
+while IFS='' read -r line || [[ -n "$line" ]]; do
+    echo "Install cask: $line"
+    brew cask install $line
+done < brewcaskfile
 
 # Complete install of python3 for pip
 brew postinstall python3

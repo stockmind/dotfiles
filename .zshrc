@@ -108,3 +108,5 @@ alias ohmyzsh="subl ~/.oh-my-zsh"
 alias afk='/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/Resources/CGSession -suspend'
 
 export TERM="xterm-256color"
+
+export PATH=$(brew --prefix)/bin:$(brew --prefix)/sbin:$PATH

@@ -51,4 +51,6 @@ cp .vimrc ~/.vimrc
 
 # Uncomment to install OneDrive client from AppStore
 #mas install 823766827
+# Install WhatsApp Desktop from App Store
+mas install 1147396723
 

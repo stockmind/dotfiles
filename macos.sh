@@ -22,6 +22,8 @@ done < brewcaskfile
 # Complete install of python3 for pip
 brew postinstall python3
 
+pip install Pygments
+
 # Install nerd fonts
 brew tap caskroom/fonts
 brew cask install font-hack-nerd-font

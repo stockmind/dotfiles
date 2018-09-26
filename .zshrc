@@ -69,6 +69,9 @@ plugins=(
   emoji
   emoji-clock
   bgnotify
+  colorize
+  colored-man
+  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -102,6 +105,7 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 alias lss="ls -a"
 alias ll="ls -la"
 alias subl="open -a /Applications/Sublime\ Text.app"
+alias vscode="open -a /Applications/Visual\ Studio\ Code.app"
 alias chrometest="open -a Google\ Chrome --args --disable-web-security --user-data-dir"
 alias zshconfig="subl ~/.zshrc"
 alias ohmyzsh="subl ~/.oh-my-zsh"
@@ -110,3 +114,4 @@ alias afk='/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/Resourc
 export TERM="xterm-256color"
 
 export PATH=$(brew --prefix)/bin:$(brew --prefix)/sbin:$PATH
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

@@ -19,6 +19,10 @@ while IFS='' read -r line || [[ -n "$line" ]]; do
     brew cask install $line
 done < brewcaskfile
 
+# MacOs color picker launcher
+brew tap nrlquaker/personal
+brew cask install colorpicker-launcher
+
 # Complete install of python3 for pip
 brew postinstall python3
 

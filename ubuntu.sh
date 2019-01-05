@@ -10,6 +10,9 @@ pip3 install thefuck
 sudo apt -y install va-driver-all libva1 gstreamer1.0-libav gstreamer1.0-vaapi
 sudo apt -y install vlc virtualbox
 
+# Install shell hightlight
+sudo apt -y install zsh-syntax-highlighting
+
 sudo add-apt-repository ppa:webupd8team/sublime-text-3
 sudo add-apt-repository ppa:atareao/telegram
 

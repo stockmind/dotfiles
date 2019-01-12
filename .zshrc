@@ -115,3 +115,4 @@ export TERM="xterm-256color"
 
 export PATH=$(brew --prefix)/bin:$(brew --prefix)/sbin:$PATH
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fpath=(/usr/local/share/zsh-completions $fpath)

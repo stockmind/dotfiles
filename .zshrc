@@ -110,6 +110,7 @@ alias chrometest="open -a Google\ Chrome --args --disable-web-security --user-da
 alias zshconfig="subl ~/.zshrc"
 alias ohmyzsh="subl ~/.oh-my-zsh"
 alias afk='/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/Resources/CGSession -suspend'
+alias myip="ifconfig en0 | grep inet\ | grep -E '(\d{1,3}\.){3}\d{1,3}' | awk '{print $2}'"
 
 export TERM="xterm-256color"
 

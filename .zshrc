@@ -114,6 +114,12 @@ alias myip="ifconfig en0 | grep inet\ | grep -E '(\d{1,3}\.){3}\d{1,3}' | awk '{
 
 export TERM="xterm-256color"
 
+export GOPATH=$HOME/go
+export GOROOT=/usr/local/opt/go/libexec
+
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin
+
 export PATH=$(brew --prefix)/bin:$(brew --prefix)/sbin:$PATH
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fpath=(/usr/local/share/zsh-completions $fpath)

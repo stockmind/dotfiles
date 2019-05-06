@@ -44,13 +44,13 @@ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/theme
 cp .zshrc ~/.zshrc
 
 # Install Vundle for Vim plugin management
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+#git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # Copy .vimrc
-cp .vimrc ~/.vimrc
+#cp .vimrc ~/.vimrc
 
 # Uncomment to install OneDrive client from AppStore
-#mas install 823766827
+mas install 823766827
 # Install WhatsApp Desktop from App Store
 mas install 1147396723
 

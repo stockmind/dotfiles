@@ -55,3 +55,5 @@ mas install 823766827
 mas install 1147396723
 # Amphetamine
 mas install 937984704
+# Magnet
+mas install 441258766

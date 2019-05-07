@@ -17,3 +17,4 @@ zsh-completions
 jq
 httpie
 golang
+sshfs

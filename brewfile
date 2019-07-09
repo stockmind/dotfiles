@@ -18,3 +18,5 @@ jq
 httpie
 golang
 sshfs
+nvm
+yarn

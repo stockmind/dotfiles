@@ -70,7 +70,7 @@ plugins=(
   emoji-clock
   bgnotify
   colorize
-  colored-man
+  colored-man-pages
   zsh-syntax-highlighting
 )
 

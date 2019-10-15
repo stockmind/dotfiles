@@ -13,16 +13,42 @@ sudo apt -y install vlc virtualbox
 # Install shell hightlight
 sudo apt -y install zsh-syntax-highlighting
 
-sudo add-apt-repository ppa:webupd8team/sublime-text-3
+# Sublime text 
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+sudo apt-get install apt-transport-https
+echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+
+# Telegram
 sudo add-apt-repository ppa:atareao/telegram
 
+# Google Chrome
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
 sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+
+# Visual Studio Code
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+
+# Yarn
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+
 sudo apt update 
 
 sudo apt -y install google-chrome-stable
-sudo apt -y install sublime-text-installer
 sudo apt -y install telegram-desktop
+sudo apt -y install sublime-text
+sudo apt -y install code
+
+# PHP7 cli
+sudo apt -y install php
+
+# Node 
+sudo snap install node --classic --channel=10
+sudo apt -y install yarn
+
+# Install qTerminal colorscheme
+mkdir -p ~/.config/qterminal.org/color-schemes && cp Themes/Nordic.colorscheme ~/.config/qterminal.org/color-schemes
 
 # Install nerd fonts
 git clone https://github.com/ryanoasis/nerd-fonts.git

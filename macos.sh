@@ -29,7 +29,7 @@ brew postinstall python3
 pip install Pygments
 
 # Install nerd fonts
-brew tap caskroom/fonts
+brew tap homebrew/cask-fonts
 brew cask install font-hack-nerd-font
 
 # Install oh-my-zsh

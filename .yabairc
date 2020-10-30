@@ -1,0 +1,78 @@
+#!/usr/bin/env sh
+
+yabai -m config window_opacity               off
+
+# global settings
+yabai -m config mouse_follows_focus          off
+yabai -m config focus_follows_mouse          autoraise
+yabai -m config window_placement             second_child
+yabai -m config window_topmost               off
+yabai -m config window_shadow                on
+yabai -m config window_border                off
+yabai -m config window_border_placement      inset
+yabai -m config window_border_width          4
+yabai -m config window_border_radius         -1.0
+yabai -m config active_window_border_topmost off
+yabai -m config active_window_border_color   0xff775759
+yabai -m config normal_window_border_color   0xff505050
+yabai -m config insert_window_border_color   0xffd75f5f
+yabai -m config split_ratio                  0.50
+yabai -m config auto_balance                 on
+yabai -m config mouse_modifier               fn
+yabai -m config mouse_action1                move
+yabai -m config mouse_action2                resize
+
+# general space settings
+yabai -m config layout                       bsp
+yabai -m config top_padding                  5
+yabai -m config bottom_padding               5
+yabai -m config left_padding                 5
+yabai -m config right_padding                5
+yabai -m config window_gap                   10
+
+# Space config
+yabai -m config --space 6 layout             float
+
+# Unmanaged
+yabai -m rule --add app="^(System Preferences|Preferenze di Sistema)$"  manage=off border=off
+
+# Space labels
+yabai -m space 1 --label "Primary"
+yabai -m space 2 --label "Comms"
+yabai -m space 3 --label "Mail"
+yabai -m space 4 --label "Tools"
+yabai -m space 5 --label "Media"
+yabai -m space 6 --label "Float"
+yabai -m space 7 --label "Secondary"
+
+# Primary
+yabai -m rule --add app="Google Chrome"         space="Primary"
+yabai -m rule --add app="Visual Studio Code"    space="Primary"
+
+# Communication
+yabai -m rule --add app="Teams"                 space="Comms"
+yabai -m rule --add app="Telegram"              space="Comms"
+yabai -m rule --add app="Discord"               space="Comms"
+yabai -m rule --add app="WhatsApp"              space="Comms"
+yabai -m rule --add app="Finder"                space="Comms"
+
+# Mail
+yabai -m rule --add app="Mail"                  space="Mail"
+
+# Tools
+yabai -m rule --add app="Microsoft Word"        space="Tools"
+yabai -m rule --add app="Sequel Pro"            space="Tools"
+yabai -m rule --add app="Activity Monitor"      space="Tools"
+yabai -m rule --add app="App Store"             space="Tools"
+yabai -m rule --add app="iTerm"                 space="Tools"
+
+# Media
+yabai -m rule --add app="Music"                 space="Media"
+yabai -m rule --add app="QuickTime Player"      space="Media"
+yabai -m rule --add app="VLC"                   space="Media"
+yabai -m rule --add app="Spotify"               space="Media"
+
+# Float
+yabai -m rule --add app="^(System Preferences|Preferenze di Sistema)$"  space="Float"
+
+echo "yabai configuration loaded.."

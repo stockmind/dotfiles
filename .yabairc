@@ -4,7 +4,7 @@ yabai -m config window_opacity               off
 
 # global settings
 yabai -m config mouse_follows_focus          off
-yabai -m config focus_follows_mouse          autoraise
+yabai -m config focus_follows_mouse          off
 yabai -m config window_placement             second_child
 yabai -m config window_topmost               off
 yabai -m config window_shadow                on
@@ -31,35 +31,39 @@ yabai -m config right_padding                5
 yabai -m config window_gap                   10
 
 # Space config
-yabai -m config --space 6 layout             float
+yabai -m config --space 7 layout             float
 
 # Unmanaged
 yabai -m rule --add app="^(System Preferences|Preferenze di Sistema)$"  manage=off border=off
 
 # Space labels
 yabai -m space 1 --label "Primary"
-yabai -m space 2 --label "Comms"
-yabai -m space 3 --label "Mail"
-yabai -m space 4 --label "Tools"
+yabai -m space 2 --label "Programming"
+yabai -m space 3 --label "Tools"
+yabai -m space 4 --label "Comms"
 yabai -m space 5 --label "Media"
-yabai -m space 6 --label "Float"
-yabai -m space 7 --label "Secondary"
+yabai -m space 6 --label "Mail"
+yabai -m space 7 --label "Float"
+yabai -m space 8 --label "Secondary"
 
 # Primary
 yabai -m rule --add app="Google Chrome"         space="Primary"
-yabai -m rule --add app="Visual Studio Code"    space="Primary"
+
+# Programming
+yabai -m rule --add app="Visual Studio Code"    space="Programming"
 
 # Communication
 yabai -m rule --add app="Teams"                 space="Comms"
 yabai -m rule --add app="Telegram"              space="Comms"
 yabai -m rule --add app="Discord"               space="Comms"
 yabai -m rule --add app="WhatsApp"              space="Comms"
-yabai -m rule --add app="Finder"                space="Comms"
+yabai -m rule --add app="Skype"                 space="Comms"
 
 # Mail
 yabai -m rule --add app="Mail"                  space="Mail"
 
 # Tools
+yabai -m rule --add app="Finder"                space="Tools"
 yabai -m rule --add app="Microsoft Word"        space="Tools"
 yabai -m rule --add app="Sequel Pro"            space="Tools"
 yabai -m rule --add app="Activity Monitor"      space="Tools"

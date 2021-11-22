@@ -8,7 +8,9 @@ terminal-notifier
 tree
 wget
 mas
+mpv
 fzf
+youtube-dl
 zsh-syntax-highlighting
 zsh-completions
 jq

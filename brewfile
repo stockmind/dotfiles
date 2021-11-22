@@ -3,15 +3,12 @@ coreutils
 ffmpeg
 git
 imagemagick
-python3
 rsync
 terminal-notifier
 tree
 wget
-node
 mas
 fzf
-mps-youtube
 zsh-syntax-highlighting
 zsh-completions
 jq

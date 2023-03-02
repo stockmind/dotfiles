@@ -123,6 +123,9 @@ alias webserver='python3 -m http.server'
 alias phpserver='php -S 127.0.0.1:8880'
 alias wtfdock="killall Dock" # Sometimes with current Electron apps (vscode) icons disappears from dock
 
+# utility function to know size of registry docker image without pulling it first, requires jq
+dockersize() { docker manifest inspect -v "$1" | jq -c 'if type == "array" then .[] else . end' |  jq -r '[ ( .Descriptor.platform | [ .os, .architecture, .variant, ."os.version" ] | del(..|nulls) | join("/") ), ( [ .SchemaV2Manifest.layers[].size ] | add ) ] | join(" ")' | numfmt --to iec --format '%.2f' --field 2 | column -t ; }
+
 export TERM="xterm-256color"
 
 export GOPATH=$HOME/go
@@ -131,16 +134,15 @@ export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
 
+# Brew bins in path
 export PATH=$(brew --prefix)/bin:$(brew --prefix)/sbin:$PATH
+
+# Deno bins in path
+export PATH="$HOME/.deno/bin:$PATH"
+
+# Syntax highlight
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fpath=(/usr/local/share/zsh-completions $fpath)
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # History substring search
 source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
@@ -150,3 +152,18 @@ bindkey '^[[B' history-substring-search-down
 # Use autosuggestion
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=8"
+
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+# Enforce english for CLI messages
+export LC_ALL=en_US.UTF-8
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# pnpm
+export PNPM_HOME="/Users/simonerobertonunzi/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end

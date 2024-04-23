@@ -53,3 +53,6 @@ mas install 937984704
 # ytfzf
 curl -sL "https://raw.githubusercontent.com/pystardust/ytfzf/master/ytfzf" | sudo tee /usr/local/bin/ytfzf >/dev/null && sudo chmod 755 /usr/local/bin/ytfzf
 
+# Disable insane default that rearrange spaces based on last use
+defaults write com.apple.dock "mru-spaces" -bool "false" && killall Dock
+

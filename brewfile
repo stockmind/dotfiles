@@ -4,6 +4,7 @@ coreutils
 diff-so-fancy
 ffmpeg
 fzf
+glow
 git
 git-delta
 golang
@@ -24,6 +25,7 @@ sshfs
 terminal-notifier
 the_silver_searcher
 tree
+uv
 webp
 wget
 yabai
